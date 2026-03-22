@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# アーカイブ・一時ファイル
+*.tgz
+*.zip
+*.tar.gz
+
+# PHP
+vendor/
+apps/web/vendor/
+
+# 機密設定
+apps/web/includes/config.php
+.env
+*.env
+
+# 不要ファイル
+Wantedly_Mark_DarkBG.svg
+
+# ツール生成ディレクトリ
+.claude/
+.tmp/

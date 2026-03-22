@@ -1,0 +1,4 @@
+# HTTP → HTTPS 強制リダイレクト
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
