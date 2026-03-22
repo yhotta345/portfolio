@@ -1564,12 +1564,14 @@ textarea.contact-form-control {
 
 /* Contact intro */
 .contact-sending {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 0.6rem;
   color: var(--blue);
   font-size: 1rem;
   font-weight: 600;
+  width: 100%;
 }
 .contact-sending-spinner {
   display: inline-block;
