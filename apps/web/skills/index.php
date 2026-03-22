@@ -21,7 +21,7 @@ require_once __DIR__ . '/../includes/header.php';
       <div class="col-lg-6">
         <div class="card-panel skill-card h-100">
           <h2 class="profile-section-title">スキル</h2>
-          <p class="profile-section-body">スキル名とおおよその実務経験年数です。フロントエンドからインフラまで幅広く対応できます。</p>
+          <p class="profile-section-body">スキル名とおおよその実務経験年数です。<br>フロントエンドからインフラまで幅広く対応できます。</p>
           <div class="skill-years-list">
             <?php foreach ($skillYears as $skill): ?>
               <div class="skill-years-item">
