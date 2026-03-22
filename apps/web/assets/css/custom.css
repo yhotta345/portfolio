@@ -1563,6 +1563,28 @@ textarea.contact-form-control {
 }
 
 /* Contact intro */
+.contact-sending {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.contact-sending-spinner {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2.5px solid rgba(37, 99, 235, 0.25);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 .contact-intro {
   padding-top: 2rem;
   padding-bottom: 1rem;

@@ -171,6 +171,20 @@
 
     if (!valid) {
       e.preventDefault();
+      return;
+    }
+
+    // バリデーション通過後：送信中UIに切り替え
+    const submitBtn = form.querySelector('[type="submit"]');
+    if (submitBtn) {
+      submitBtn.style.display = 'none';
+
+      const sending = document.createElement('div');
+      sending.className = 'contact-sending';
+      sending.innerHTML =
+        '<span class="contact-sending-spinner"></span>' +
+        '<span class="contact-sending-text">送信中...</span>';
+      submitBtn.parentNode.insertBefore(sending, submitBtn.nextSibling);
     }
   });
 
