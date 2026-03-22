@@ -141,6 +141,11 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 
     <div class="row gy-4 gx-0 gx-md-4">
+      <?php if (empty($projects)): ?>
+        <div class="col-12 text-center py-4">
+          <p class="text-muted-custom">現在準備中です。</p>
+        </div>
+      <?php endif; ?>
       <?php foreach (array_slice($projects, 0, 3, true) as $i => $project): ?>
         <div class="col-lg-4 col-md-6">
           <a href="/projects/#project-<?= $i ?>" class="works-card d-block">

@@ -36,6 +36,11 @@ $projectCategories = ['Webサイト', 'Webアプリ', 'CMS構築', 'システム
 <section class="section-py">
   <div class="container max-w-container works-single-column">
     <div class="row gy-4" id="worksGrid">
+      <?php if (empty($projects)): ?>
+        <div class="col-12 text-center py-5">
+          <p class="text-muted-custom">現在準備中です。しばらくお待ちください。</p>
+        </div>
+      <?php endif; ?>
       <?php foreach ($projects as $i => $project):
         $overview = '';
         foreach ($project['details'] as $d) {
