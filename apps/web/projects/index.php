@@ -6,7 +6,8 @@ $basePath        = '/..';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/header.php';
 
-$projectCategories = ['Webサイト', 'Webアプリ', 'CMS構築', 'システム開発'];
+$usedCategories = array_values(array_unique(array_filter(array_column($projects, 'category'))));
+sort($usedCategories);
 ?>
 
 <!-- Page Hero -->
@@ -21,7 +22,7 @@ $projectCategories = ['Webサイト', 'Webアプリ', 'CMS構築', 'システム
   <div class="works-filter">
     <div class="works-filter-categories">
       <button class="works-filter-btn is-active" data-filter="all">すべて</button>
-      <?php foreach ($projectCategories as $cat): ?>
+      <?php foreach ($usedCategories as $cat): ?>
         <button class="works-filter-btn" data-filter="<?= htmlspecialchars($cat) ?>"><?= htmlspecialchars($cat) ?></button>
       <?php endforeach; ?>
     </div>
