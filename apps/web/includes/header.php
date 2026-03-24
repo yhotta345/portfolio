@@ -15,6 +15,7 @@ if ($currentPath === '//') $currentPath = '/';
 
       <!-- ロゴ -->
       <a class="navbar-brand header-logo" href="/">
+        <img src="/apple-touch-icon.png" alt="" class="site-logo-img" aria-hidden="true">
         <?= htmlspecialchars($profile['nameEn']) ?>
       </a>
 

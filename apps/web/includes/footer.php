@@ -3,7 +3,10 @@
     <div class="footer-panel">
       <div class="row align-items-center g-3 g-lg-5">
         <div class="col-lg-4 d-flex align-items-center">
-          <a href="/" class="footer-name-link"><?= htmlspecialchars($profile['nameEn']) ?></a>
+          <a href="/" class="footer-name-link">
+            <img src="/apple-touch-icon.png" alt="" class="site-logo-img" aria-hidden="true">
+            <?= htmlspecialchars($profile['nameEn']) ?>
+          </a>
         </div>
         <div class="col-lg-8">
           <nav class="footer-nav" aria-label="フッターナビゲーション">
