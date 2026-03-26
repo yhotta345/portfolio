@@ -101,4 +101,4 @@ php -S localhost:8080
 
 ## デプロイ
 
-本番環境（Xserver）へのデプロイ手順は [docs/release-checklist.md](docs/release-checklist.md) を参照してください。
+本番環境（ConoHa WING）へのデプロイ手順は [docs/release-checklist.md](docs/release-checklist.md) を参照してください。
