@@ -87,7 +87,7 @@ header.sticky-top {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--font-display);
+  font-family: 'Plus Jakarta Sans', 'Avenir Next', sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
   line-height: 1;
@@ -838,7 +838,7 @@ textarea.contact-form-control {
 }
 
 .footer-name {
-  font-family: var(--font-display);
+  font-family: 'Plus Jakarta Sans', 'Avenir Next', sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
