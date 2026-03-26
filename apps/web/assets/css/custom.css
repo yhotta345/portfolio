@@ -851,7 +851,7 @@ textarea.contact-form-control {
   align-items: center;
   gap: 0.5rem;
   line-height: 1;
-  font-family: var(--font-display);
+  font-family: 'Plus Jakarta Sans', 'Avenir Next', sans-serif;
   font-size: 1.35rem;
   font-weight: 700;
   color: var(--text-primary);
